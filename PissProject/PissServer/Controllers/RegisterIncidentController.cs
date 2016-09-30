@@ -10,7 +10,12 @@ namespace PissServer.Controllers
 {
     public class RegisterIncidentController : ApiController
     {
-        
+        DatabaseFacade et;
+        public RegisterIncidentController()
+        {
+            Database.FakeDatabase db = new Database.FakeDatabase();
+            et = new DatabaseFacade(db);
+        }
 
         // GET: api/RegisterIncident
         public IEnumerable<string> Get()
@@ -25,8 +30,11 @@ namespace PissServer.Controllers
         }
 
         // POST: api/RegisterIncident
-        public void Post([FromBody]string value)
+        public void Post([FromBody] int id, DateTime timeStamp)
         {
+            Incident incident = new Incident(id, timeStamp);
+            et.Create(incident);
+            
         }
 
         // PUT: api/RegisterIncident/5

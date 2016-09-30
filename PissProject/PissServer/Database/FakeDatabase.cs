@@ -5,9 +5,9 @@ using System.Web;
 
 namespace PissServer.Database
 {
-    public class FakeDatabase : IDataMapper
+    public class FakeDatabase : IDataMapper<Models.Incident>
     {
-        public void Create(object obj)
+        public void Create(Models.Incident obj)
         {
             throw new NotImplementedException();
         }
@@ -17,12 +17,12 @@ namespace PissServer.Database
             throw new NotImplementedException();
         }
 
-        public object Read(int id)
+        public Models.Incident Read(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(int id, object obj)
+        public void Update(int id, Models.Incident obj)
         {
             throw new NotImplementedException();
         }

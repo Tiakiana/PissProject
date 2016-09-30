@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace PissServer.Database
 {
-    interface IDataMapper
+    public interface IDataMapper<T>
     {
-        void Create(object obj);
-        object Read(int id);
-        void Update(int id, object obj);
+        void Create(T obj);
+        T Read(int id);
+        void Update(int id, T obj);
         void Delete(int id);
     }
 }
