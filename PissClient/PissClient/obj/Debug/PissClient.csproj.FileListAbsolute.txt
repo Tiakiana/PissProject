@@ -4,3 +4,9 @@ c:\users\amaterasu\documents\visual studio 2015\Projects\PissClient\PissClient\b
 c:\users\amaterasu\documents\visual studio 2015\Projects\PissClient\PissClient\obj\Debug\PissClient.csprojResolveAssemblyReference.cache
 c:\users\amaterasu\documents\visual studio 2015\Projects\PissClient\PissClient\obj\Debug\PissClient.exe
 c:\users\amaterasu\documents\visual studio 2015\Projects\PissClient\PissClient\obj\Debug\PissClient.pdb
+C:\Users\niels\Source\Repos\PissProject\PissClient\PissClient\bin\Debug\PissClient.exe.config
+C:\Users\niels\Source\Repos\PissProject\PissClient\PissClient\obj\Debug\PissClient.exe
+C:\Users\niels\Source\Repos\PissProject\PissClient\PissClient\obj\Debug\PissClient.pdb
+C:\Users\niels\Source\Repos\PissProject\PissClient\PissClient\bin\Debug\PissClient.exe
+C:\Users\niels\Source\Repos\PissProject\PissClient\PissClient\bin\Debug\PissClient.pdb
+C:\Users\niels\Source\Repos\PissProject\PissClient\PissClient\obj\Debug\PissClient.csprojResolveAssemblyReference.cache

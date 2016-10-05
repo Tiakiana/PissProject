@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
+using PissClient.PissServer;
 
 namespace PissClient
 {
@@ -9,7 +11,8 @@ namespace PissClient
     {
         static void Main(string[] args)
         {
-            PissServer.WCFPissServiceClient ps = new PissServer.WCFPissServiceClient();
+            
+            PissServer.WCFPissServiceClient ps = new PissServer.WCFPissServiceClient("BasicHttpBinding_IWCFPissService");
             ps.RegisterIncident(1, DateTime.Now);
             Console.WriteLine("Der er penge i pisset");
            // Console.ReadKey();

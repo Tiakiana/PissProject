@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using ProjectPiss.Models;
 
 namespace ProjectPiss
 {
@@ -24,17 +25,19 @@ namespace ProjectPiss
             dataContext.Incidents.Add(inc);
         }
 
-        public List<Models.Incident> GetIncidents(int id) {
-            List<Models.Incident> incidents = new List<Models.Incident>();
+        public IQueryable<Incident> GetIncidents(int id) {
+            //List<Models.Incident> incidents = new List<Models.Incident>();
+            IQueryable<Incident> incidents = dataContext.Incidents;
+            return dataContext.Incidents.Where(i => i.CustomerId == id);
 
-            foreach (var item in collection)
-            {
+            //foreach (var item in collection)
+            //{
 
-            } 
+            //} 
 
-            return (List<Models.Incident>)dataContext.Incidents.Where(i => i.CustomerId == id).ToList<Models.Incident>();
-            
-            
+            //return dataContext.Incidents.Where(i => i.CustomerId == id).ToList();
+
+
         }
     }
 }

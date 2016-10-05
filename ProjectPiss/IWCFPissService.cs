@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using ProjectPiss.Models;
 
 namespace ProjectPiss
 {
@@ -16,7 +17,7 @@ namespace ProjectPiss
         [OperationContract]
         void RegisterIncident(int custId, DateTime timestamp);
         [OperationContract]
-        List<Models.Incident> GetIncidents(int id);
+        IQueryable<Incident> GetIncidents(int id);
     }
     
 }
