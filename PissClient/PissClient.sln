@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectPiss", "ProjectPiss\ProjectPiss.csproj", "{58DB2B8C-A42B-4E76-A59A-64D5DC9FB49A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PissClient", "PissClient\PissClient.csproj", "{600A0353-74AB-4C84-8E93-73D8165AB3B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{58DB2B8C-A42B-4E76-A59A-64D5DC9FB49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58DB2B8C-A42B-4E76-A59A-64D5DC9FB49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58DB2B8C-A42B-4E76-A59A-64D5DC9FB49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58DB2B8C-A42B-4E76-A59A-64D5DC9FB49A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{600A0353-74AB-4C84-8E93-73D8165AB3B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{600A0353-74AB-4C84-8E93-73D8165AB3B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{600A0353-74AB-4C84-8E93-73D8165AB3B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{600A0353-74AB-4C84-8E93-73D8165AB3B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

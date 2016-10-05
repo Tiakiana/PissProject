@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="74d0a86c-25d6-469f-9a9b-90c3c8402f71" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:11127/WCFPissService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFPissService.wsdl" MetadataType="Wsdl" ID="5695deb1-96dc-4062-bbdd-7f2bbccab3d7" SourceId="1" SourceUrl="http://localhost:11127/WCFPissService.svc?wsdl" />
+    <MetadataFile FileName="WCFPissService.disco" MetadataType="Disco" ID="1fd80e28-7480-423c-94ea-e7aeee17a01b" SourceId="1" SourceUrl="http://localhost:11127/WCFPissService.svc?disco" />
+    <MetadataFile FileName="WCFPissService.xsd" MetadataType="Schema" ID="c1b10ddf-4bed-4c5d-9161-e154d11f05bb" SourceId="1" SourceUrl="http://localhost:11127/WCFPissService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFPissService1.xsd" MetadataType="Schema" ID="e784cd71-d502-447c-bfa7-be394bc80e5d" SourceId="1" SourceUrl="http://localhost:11127/WCFPissService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCFPissService2.xsd" MetadataType="Schema" ID="08092685-2965-401e-a55b-50743e1ddf0d" SourceId="1" SourceUrl="http://localhost:11127/WCFPissService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
