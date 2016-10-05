@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
@@ -12,6 +13,7 @@ using ProjectIdea.Models;
 
 namespace ProjectIdea.Controllers
 {
+    [Authorize]
     public class IncidentsController : ApiController
     {
         private ProjectIdeaContext db = new ProjectIdeaContext();

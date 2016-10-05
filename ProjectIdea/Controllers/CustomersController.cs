@@ -12,6 +12,7 @@ using ProjectIdea.Models;
 
 namespace ProjectIdea.Controllers
 {
+    [Authorize]
     public class CustomersController : ApiController
     {
         private ProjectIdeaContext db = new ProjectIdeaContext();
