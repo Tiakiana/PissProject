@@ -16,8 +16,10 @@ namespace ProjectPiss
         void DoWork();
         [OperationContract]
         void RegisterIncident(int custId, DateTime timestamp);
+
         [OperationContract]
-        IQueryable<Incident> GetIncidents(int id);
+        //IQueryable<Incident> GetIncidents(int id);
+        List<Incident> GetIncidents(int id);
     }
     
 }

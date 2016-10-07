@@ -17,11 +17,11 @@ namespace ProjectPiss.Models
         [DataMember]
         public DateTime Timestamp { get; set; }
        
-        public Incident(int customerId, DateTime timestamp)
-        {
+        //public Incident(int customerId, DateTime timestamp)
+        //{
             
-            CustomerId = customerId;
-            Timestamp = timestamp;
-        }
+        //    CustomerId = customerId;
+        //    Timestamp = timestamp;
+        //}
     }
 }

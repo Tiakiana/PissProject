@@ -21,14 +21,15 @@ namespace ProjectPiss
 
         public void RegisterIncident(int custId, DateTime timestamp)
         {
-            Models.Incident inc = new Models.Incident(custId,timestamp);
+            Models.Incident inc = new Models.Incident();
             dataContext.Incidents.Add(inc);
         }
 
-        public IQueryable<Incident> GetIncidents(int id) {
+        public List<Incident> GetIncidents(int id) {
             //List<Models.Incident> incidents = new List<Models.Incident>();
-            IQueryable<Incident> incidents = dataContext.Incidents;
-            return dataContext.Incidents.Where(i => i.CustomerId == id);
+            List<Incident> incidents = dataContext.Incidents.ToList();
+            return incidents.Where(i => i.CustomerId == id).ToList();
+            
 
             //foreach (var item in collection)
             //{
