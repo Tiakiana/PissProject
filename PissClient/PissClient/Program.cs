@@ -18,7 +18,7 @@ namespace PissClient
            // Console.ReadKey();
             foreach (PissServer.Incident item in ps.GetIncidents(1))
             {
-                Console.WriteLine(item.Timestamp.ToString());
+                Console.WriteLine(item.Timestamp);
             }
 
             Console.ReadKey();
