@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using ProjectPiss.Logging;
 using ProjectPiss.Models;
 
 namespace ProjectPiss
@@ -23,10 +24,13 @@ namespace ProjectPiss
         {
             Models.Incident inc = new Models.Incident(custId,timestamp);
             dataContext.Incidents.Add(inc);
+            Logging.LogWriter lw = new LogWriter(DateTime.Now + " Customer: " + custId + "Time:" + timestamp + "\n");
         }
 
         public List<Incident> GetIncidents(int id) {
-            //List<Models.Incident> incidents = new List<Models.Incident>();
+           
+            Logging.LogWriter lw = new LogWriter(DateTime.Now + "Tried access of " + id);
+
             List<Incident> incidents = dataContext.Incidents.ToList();
 
             return incidents.Where(i => i.CustomerId == id).ToList();

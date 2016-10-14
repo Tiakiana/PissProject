@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using ProjectPiss.Logging;
 using ProjectPiss.Models;
 
 namespace ProjectPiss.Controllers
@@ -39,6 +40,9 @@ namespace ProjectPiss.Controllers
         [ResponseType(typeof(void))]
         public IHttpActionResult PutIncident(int id, Incident incident)
         {
+            Logging.LogWriter lw = new LogWriter(DateTime.Now+ " Customer: " + id + "Time:" + incident.Timestamp + "\n");
+
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
